@@ -1,0 +1,405 @@
+<%- include('../includes/header.ejs') %>
+
+    <div class="iq-navbar-header" style="height: 215px;">
+        <div class="container-fluid iq-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flex-wrap d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1>Hello Admin👋</h1>
+                            <p>Here are all the users who are registered at HireWave</p>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="iq-header-img">
+            <img src="../../assets/images/dashboard/top-header.png" alt="header"
+                class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="../../assets/images/dashboard/top-header1.png" alt="header"
+                class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="../../assets/images/dashboard/top-header2.png" alt="header"
+                class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="../../assets/images/dashboard/top-header3.png" alt="header"
+                class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="../../assets/images/dashboard/top-header4.png" alt="header"
+                class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="../../assets/images/dashboard/top-header5.png" alt="header"
+                class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX">
+        </div>
+    </div> <!-- Nav Header Component End -->
+    <!--Nav End-->
+    </div>
+    <div class="conatiner-fluid content-inner mt-n5 py-0">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">
+                                <%=user.userFirstName%>
+                                    <%=user.userLastName%>'s Profile
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-sm-12 mt-4">
+                                <div class="table-responsive-lg">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Type</th>
+                                                <th class="text-center" scope="col">Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">First Name: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.userFirstName%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Last Name: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.userLastName%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Email: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.userEmail%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Professional Role: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.professionalRole%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Languages Known: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.languages%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Skills: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.skills%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">bio: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.bio%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Credits: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.credits%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Date of Birth: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.dateOfBirth%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Country: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.country%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">City: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.city%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">State: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.state%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Address: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.address%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">PinCode: </h6>
+
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.pinCode%>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Work Experience</th>
+                                                <th class="text-center" scope="col">Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Work Title: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.title%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Company Name: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.company%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Location: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.location%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Work Industry: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.workIndustry%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Country: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.workCountry%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Start Date: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.startDate%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">End Date: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.endDate%>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Education</th>
+                                                <th class="text-center" scope="col">Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">School/Institute: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.school%>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Degree: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.degree%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Field: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.field%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Start Date: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.educationStartDate%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">End Date: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.educationEndDate%>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Projects</th>
+                                                <th class="text-center" scope="col">Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td>
+                                                    <h6 class="mb-0">Project Name: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.projectName%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Project Description: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.projectDescription%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Associated With: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.associatedWith%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Project Start Date: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.projectStartDate%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Project End Date: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.projectEndDate%>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Certificates</th>
+                                                <th class="text-center" scope="col">Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Certificate Name: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.certificateName%>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <h6 class="mb-0">Certificate Image: </h6>
+                                                </td>
+                                                <td class="text-center">
+                                                    <%=user.certificateImage%>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include('../includes/footer.ejs') %>
