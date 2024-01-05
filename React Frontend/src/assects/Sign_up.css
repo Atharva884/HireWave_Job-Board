@@ -1,0 +1,28 @@
+.Sign_up{
+    width: 100%;
+    max-width: 450px;
+    min-height: 500px;
+    border: 1px solid #252525;
+}
+.Role{
+    color: black; /* Set your default label color here */
+    cursor: pointer;
+    outline: black;
+}
+.Role:checked ~ label {
+    background-color: green;
+    color: white;
+    outline: green;
+}
+.customBtn{
+    width: 100%;
+    background-color: green;
+}
+.customBtn:hover{
+    background-color: rgb(5, 91, 5);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
